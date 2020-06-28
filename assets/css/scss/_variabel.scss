@@ -1,0 +1,49 @@
+$backgroud: transparent;
+$orange: #e77e23;
+$colorWhite: white;
+$grey: #f5f9fa;
+$colorText: #464646;
+
+$fontTitle: 'Pacifico', cursive;
+$fontBody: 'Montserrat', sans-serif;
+
+$sizeTitle: 33px;
+$letter: 50px;
+$spacing: 2px;
+$marginSection: 10vw 0vw;
+$marginParagraf: 2vw 0vw;
+$fontParagraf: 15px;
+$line: 30px;
+$btn-padding: 40px 125px;
+
+%button{
+    border: none;
+    padding: 15px 30px;
+    background-color: $orange;
+    color: white;
+}
+
+@mixin border-rad($radius){
+    border-radius: $radius;
+    -ms-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
+
+%backgroundImg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+%number{
+    width: fit-content;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+$sizeMid: 750px;
+$sizeBig: 992px;
+$sizeSuper: 1195px;

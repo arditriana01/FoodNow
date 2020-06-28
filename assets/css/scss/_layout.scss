@@ -1,0 +1,512 @@
+body{
+    font-family: $fontBody;
+}
+
+.btn-secondary{
+    @extend %button;
+    @include border-rad(25px);
+
+    &:hover{
+        background: rgb(248, 177, 44);
+    }
+}
+
+a{
+    color: black;
+    text-decoration: none;
+
+    &:hover{
+        color: $orange;
+        text-decoration: none;
+    }
+}
+
+p{
+    color: $colorText;
+}
+
+h1{
+    color: $orange;
+    font-family: $fontTitle;
+    font-weight: 400;
+    font-size: 53px;
+    
+    span{
+        color: black;
+    }
+}
+
+.card{
+    border: none;
+}
+
+// ================
+.navbar{
+    background: $backgroud;
+    padding: 20px 0px;
+
+    .navbar-brand{
+        font-family: $fontTitle;
+        font-size: 2rem;
+    }
+
+    .nav-link{
+        margin: 1rem;
+        font-weight: 600;
+        color: $colorWhite !important;
+
+        &:hover{
+            color: $orange !important;
+        }
+    }
+
+    .btn-secondary{
+        margin: 1rem;
+        padding: 10px 30px;
+        @extend %button;
+        @include border-rad(25px);
+    }
+}
+
+.navbar-shrink{
+    background-color: black;
+    position: fixed;
+    padding: 10px;
+    top: -6px;
+    transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;      
+    -moz-transition:all 0.4s ease-in-out; 
+}
+// ===============
+
+// ===============
+.swiper-container {
+
+    .swiper-slide {
+        background-image: url(../img/img-main.jpg);
+        @extend %backgroundImg;
+    }
+
+    .img-2{
+        background-image: url(../img/img-main2.jpg);
+        @extend %backgroundImg;        
+    }
+
+    .img-3{
+        background-image: url(../img/img-main3.jpg);
+        @extend %backgroundImg;
+    }
+
+      .header-text{
+        padding-top: 380px;
+        padding-bottom: 280px;
+    }
+
+        h2{
+        color: $colorWhite;
+        font-size: $sizeTitle;
+        font-weight: 600;
+        line-height: $letter;
+        letter-spacing: $spacing;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+}
+// =========================
+
+// =========================
+.about{
+    background-image: url(../img/bg-title-.svg);
+    background-size: 103vw;
+    background-position: -3vw 0vw;
+    background-repeat: no-repeat;
+    margin: $marginSection;
+
+    .card{
+        background: #a8b1a824;
+        margin-top: 10rem;
+        margin-left: -17rem;
+        padding-left: 20rem;
+        padding-right: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    p{
+        margin: 3vw 0vw;
+        font-size: $fontParagraf;
+        letter-spacing: $spacing;
+        line-height: $line;
+    }
+
+    img{
+        position: absolute;
+        z-index: 1;
+    }
+
+    i{
+        position: absolute;
+        z-index: 9;
+        top: 40%;
+        left: 50%;
+        color: #ff9800a6;
+
+        &:hover{
+            color: orange;
+        }
+    }
+
+}
+// ==================
+
+// =================
+.feature{
+    margin: 10vw 0vw;
+
+    .card{
+        padding-bottom: 5vw;
+    }
+
+    .card-mid{
+        border-radius: unset;
+        border-left: 1px solid #cccccc;
+        border-right: 1px solid #cccccc;
+    }
+
+    .card-title{
+        color: $orange;
+        font-weight: 600;
+        font-size: 17px;
+        margin: 15px 0px;
+    }
+
+    .card-text{
+        font-size: $fontParagraf;
+        padding: 0px 28px;
+    }
+}
+// ===================
+
+// ===================
+.work{
+    background-color: $grey;
+    background-size: 106vw;
+    background-position: -3vw 0vw;
+    background-repeat: no-repeat;
+    padding-top: 13vw;
+    overflow: hidden;
+
+    p{
+        margin: 20px 0px;
+        max-width: 25rem;
+    }
+
+    .text-work{
+        display: inline-flex;
+        align-items: start;
+    }
+
+    img{
+        right: -210px;
+        position: relative;
+    }
+
+    .text-work-p{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .number{
+        background: $orange;
+        color: $colorWhite;
+        padding: 10px 25px 13px;
+        font-weight: 700;
+        border-radius: 41px;
+        @extend %number;
+    }
+
+    .number-{
+        border: 4px $orange solid;
+        color: $orange;
+        font-weight: 700;
+        padding: 5px 17px 6px;
+        border-radius: 30px;
+        @extend %number;
+    }
+
+}
+// ========================
+
+// ========================
+.download{
+    background: $orange;
+    padding-bottom: 13vw;
+
+    h2{
+        margin-top: 20px;
+        color: $colorWhite;
+    }
+
+    p{
+        color: $colorWhite;
+        margin-top: 3vw;
+        margin-bottom: 6vw;
+        letter-spacing: $spacing;
+    }
+
+    .btn-app{
+        background: url(../img/ico-store-app.png);
+        background-size: cover;
+        padding: $btn-padding;
+    }
+    .btn-play{
+        background: url(../img/ico-store-play.png);
+        background-size: cover;
+        padding: $btn-padding;
+        float: right;
+    }
+
+    img{
+        position: absolute;
+    }
+
+}
+// =======================
+
+// =======================
+.partners{
+    padding-top: 15rem;
+
+    .store-partners{
+        line-height: 40px;
+        font-size: 18px;
+        margin: 2rem 4rem;
+    }
+
+    .more{
+        font-weight: 600;
+    }
+
+}
+// ========================
+
+// ========================
+.coverage{    
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    h5{
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .coverage-title{
+        padding: 30px 0px;
+    }
+    
+    .menu-coverage{
+        display: inline;
+    }
+
+    ul{
+        margin: 0px 7rem;
+        list-style-type: none;        
+        float: left;
+        padding-inline-start: unset;
+        margin-inline-start: unset;
+    }
+}
+// ===========================
+
+// ===========================
+footer{
+
+    .menu-footer{
+        display: contents;
+    }
+    
+    h2{
+        font-family: $fontTitle;
+    }
+
+    h5{        
+        font-size: $fontParagraf;
+        display: contents;
+    }
+
+    .social{
+        display: inline;
+        float: right;
+    }
+
+    img{
+        padding: 0px 10px;
+        cursor: pointer;
+    }
+}
+// ============================
+
+
+// **********************************
+@media (max-width: $sizeMid){
+
+    .about{
+        img{
+            position: unset;
+        }
+
+        .card{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        i{
+            left: 43%;
+        }
+    }
+
+    .work{
+        img{
+            right: -20px;
+            position: relative;
+        }
+    }
+
+    .feature{
+        .card-mid{
+            border: unset;
+        }
+    }
+
+    .work-title{
+        text-align: center;
+    }
+
+    .store-partners{
+        margin: 2rem 0rem !important;
+    }
+
+    .menu-footer{
+        text-align: center;
+        
+        .social{
+            float: unset;
+        }
+
+        .card{
+            margin: 1rem 0rem;
+        }
+    }
+
+    .coverage{
+        ul {
+            list-style-type: none;
+            text-align: center !important;
+            padding-inline-start: unset !important;    
+            margin: 1rem 0rem !important;
+            float: unset !important;
+        }
+
+        h5{
+            text-align: center;
+        }
+    }
+
+    .download{
+        img{
+            position: unset;
+            order: 2;
+        }
+
+        .item-work{
+            text-align: center;
+        }
+
+        .btn-play{
+            float: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+    .partners {
+        padding-top: 8rem;
+    }
+}
+
+
+
+@media(max-width: $sizeBig){
+    .navbar{
+        text-align: center;
+    }
+
+    .swiper-container{
+
+        h2{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+
+
+@media(max-width: $sizeSuper){
+    .download {
+            .btn-play {
+            float: none !important;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1029px) and (min-width: 1023px){
+    .about{
+        i{
+            top: 25%;
+            left: 47%;
+        }
+    }
+
+    .partners {
+        padding-top: 5rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 737px) and (min-width: 568px){
+    .work img {
+        right: -130px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1020px) and (min-width: 765px)  {
+    .work{
+            img{
+            right: -40px;
+            position: relative;
+            top: 210px;
+        }
+    }
+
+    .about{
+
+        i{
+            top: 15%;
+            left: 47%;
+        }
+    }
+
+    .partners {
+        padding-top: 5rem;
+    }
+}
+
+// ****************************************
